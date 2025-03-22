@@ -19,6 +19,7 @@ const ItemRow = ({ id, name, phone, amount }) => {
         </TouchableOpacity>
       </Text>
       <Text className="w-40 text-primary-100 text-center">{phone}</Text>
+      <Text className="w-40 text-white text-center">Date</Text>
       <Text className="w-24 text-white text-center">
         Rs.{id < 15 ? amount : 2000}
       </Text>
@@ -37,6 +38,9 @@ export const MyTable = ({ data }) => {
             <Text className="w-40 text-white font-bold text-center">Name</Text>
             <Text className="w-16 text-white font-bold text-center">Call</Text>
             <Text className="w-40 text-white font-bold text-center">Phone</Text>
+            <Text className="w-40 text-white font-bold text-center">
+              Date Join
+            </Text>
             <Text className="w-24 text-white font-bold text-center">
               Amount
             </Text>

@@ -31,7 +31,7 @@ const Checked = () => {
 
           {/* Delete */}
           <View className="flex-row-reverse gap-10">
-            <View className="items-center justify-center flex-row-reverse gap-8 mr-5 bg-dark-100 p-2 rounded-full">
+            <View className="items-center justify-center flex-row-reverse gap-8 mr-5 bg-dark-100 p-1 rounded-full">
               <TouchableOpacity>
                 <Text className="text-primary-100 font-light p-2">
                   Select All

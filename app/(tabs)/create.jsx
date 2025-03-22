@@ -12,14 +12,14 @@ const Create = () => {
     <SafeAreaView className="flex-1 bg-dark-300">
       <View className="flex-1 justify-center items-center px-5">
         {/* Heading Text */}
-        <View className="absolute top-20 w-full items-center">
-          <Text className="font-bold text-light text-2xl bg-dark-100 py-2 px-4 rounded-full">
+        <View className="absolute top-20 w-full items-center mb-16 border border-borderColor border-b-0 rounded-full py-2 px-4 bg-dark-100 justify-center">
+          <Text className="font-bold text-light text-2xl">
             Create a New Entry Field
           </Text>
         </View>
 
         {/* Logo */}
-        <View className="items-center justify-center mb-10">
+        <View className="items-center justify-center">
           <Image
             source={images.coloredIconText}
             resizeMode="contain"
@@ -43,8 +43,8 @@ const Create = () => {
           />
         </View>
 
-        <View>
-          <MyButton />
+        <View className="mt-10">
+          <MyButton backgroundColor="#006EAD">Create</MyButton>
         </View>
       </View>
     </SafeAreaView>
