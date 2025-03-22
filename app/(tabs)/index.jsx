@@ -1,7 +1,9 @@
-import { Image, Text, View, ScrollView } from "react-native";
+import { Image, Text, View, ScrollView, TouchableOpacity } from "react-native";
 import { StatusBar } from "expo-status-bar";
 import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { router, useRouter } from "expo-router";
+import Icon from "react-native-vector-icons/Ionicons";
 
 import { MySearchBar } from "../../components/MySearchBar";
 import { MyTable } from "../../components/MyTable";
@@ -31,6 +33,7 @@ const initData = [
 ];
 
 const Index = () => {
+  const router = useRouter();
   return (
     <View className="flex-1 bg-dark-200">
       <StatusBar style="light" />
@@ -53,11 +56,20 @@ const Index = () => {
         </View>
 
         {/* Search Bar */}
-        <MySearchBar
-          textHolder="Search for person or shop..."
-          textHolderColor="#707070"
-          disableIcon={true}
-        />
+        <View className="flex-row justify-between ">
+          <View className="m-4 mb-0 w-[70%]">
+            <MySearchBar
+              textHolder="Search for person or shop..."
+              textHolderColor="#707070"
+              disableIcon={true}
+            />
+          </View>
+          <View className="items-center justify-center mx-4 mt-2">
+            <TouchableOpacity onPress={() => router.push("/create")}>
+              <Icon name="add-circle" color={"#006EAD"} size={42} />
+            </TouchableOpacity>
+          </View>
+        </View>
 
         {/* Date Text */}
         <View className="w-full px-5 py-2">

@@ -6,7 +6,7 @@ import { View } from "react-native";
 import index from "../(tabs)/index";
 import checked from "../(tabs)/checked";
 import profile from "../(tabs)/profile";
-import create from "../(tabs)/create";
+import create from "../create";
 
 const Tab = createBottomTabNavigator();
 
@@ -16,6 +16,7 @@ const TabsLayout = () => {
       screenOptions={{
         tabBarShowLabel: false,
         headerShown: false,
+        tabBarHideOnKeyboard: true,
         tabBarItemStyle: {
           width: "100%",
           height: "100%",
@@ -26,7 +27,6 @@ const TabsLayout = () => {
           backgroundColor: "#2F2F2F",
           borderRadius: 50,
           marginHorizontal: 20,
-          marginBottom: 20,
           height: 56,
           position: "absolute",
           overflow: "hidden",
@@ -51,21 +51,7 @@ const TabsLayout = () => {
           ),
         }}
       />
-      <Tab.Screen
-        name="Add"
-        component={create}
-        options={{
-          tabBarIcon: ({ focused }) => (
-            <View className="items-center justify-center top-2">
-              <Icon
-                name="add-circle"
-                color={focused ? "#006EAD" : "#D0D2D3"}
-                size={30}
-              />
-            </View>
-          ),
-        }}
-      />
+
       <Tab.Screen
         name="Done"
         component={checked}
