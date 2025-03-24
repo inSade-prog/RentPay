@@ -5,8 +5,7 @@ import { View } from "react-native";
 
 import index from "../(tabs)/index";
 import checked from "../(tabs)/checked";
-import profile from "../(tabs)/profile";
-import create from "../create";
+import profile from "../(tabs)/settings";
 
 const Tab = createBottomTabNavigator();
 
@@ -68,7 +67,7 @@ const TabsLayout = () => {
         }}
       />
       <Tab.Screen
-        name="Profile"
+        name="settings"
         component={profile}
         options={{
           tabBarIcon: ({ focused }) => (

@@ -6,11 +6,10 @@ import {
   TouchableOpacity,
 } from "react-native";
 import React from "react";
-import Icon from "react-native-vector-icons/Ionicons";
 
 const ItemRow = ({ id, name, phone, amount }) => {
   return (
-    <View className="flex-row min-w-[600px] px-4 py-3 border-b border-borderColor">
+    <View className="flex-row px-4 py-3 border-b border-borderColor">
       <Text className="w-16 text-white text-center">{id}</Text>
       <Text className="w-40 text-white text-center">{name}</Text>
       <Text className="w-16 h-8 text-white text-center">
@@ -26,11 +25,11 @@ const ItemRow = ({ id, name, phone, amount }) => {
 
 export const MyHistoryTable = ({ data }) => {
   return (
-    <View className="bg-dark-300 m-5 mt-0 flex-1 rounded-xl border border-borderColor overflow-hidden mb-30">
+    <View className="bg-dark-300 flex-1 rounded-xl border border-borderColor overflow-hidden">
       <ScrollView horizontal>
         <View>
           {/* Table Header */}
-          <View className="flex-row min-w-[600px] bg-dark-500 px-4 py-3 border-b border-borderColor">
+          <View className="flex-row bg-dark-500 px-4 py-3 border-b border-borderColor">
             <Text className="w-16 text-white font-bold text-center">Shop</Text>
             <Text className="w-40 text-white font-bold text-center">Name</Text>
             <Text className="w-16 text-white font-bold text-center">

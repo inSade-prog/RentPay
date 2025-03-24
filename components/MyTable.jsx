@@ -29,7 +29,7 @@ const ItemRow = ({ id, name, phone, amount }) => {
 
 export const MyTable = ({ data }) => {
   return (
-    <View className="bg-dark-300 m-5 mt-0 h-full rounded-xl border border-borderColor overflow-hidden mb-30">
+    <View className="bg-dark-300 h-full rounded-xl border border-borderColor overflow-hidden">
       <ScrollView horizontal>
         <View>
           {/* Table Header */}

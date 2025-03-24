@@ -3,5 +3,6 @@ export const images = {
   transparentLogo: require("../assets/images/icon-trans.png"),
   splashImg: require("../assets/images/splash.png"),
   coloredIcon: require("../assets/images/icon-colored-trans.png"),
+  tempProfileImg: require("../assets/temp/profile.jpg"),
   coloredIconText: require("../assets/images/icon-colored-trans-text.png"),
 };
