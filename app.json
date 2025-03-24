@@ -16,7 +16,8 @@
         "foregroundImage": "./assets/images/icon-trans.png",
         "backgroundColor": "#006EAD",
         "resizeMode": "cover"
-      }
+      },
+      "package": "com.anonymous.RentPay"
     },
     "web": {
       "bundler": "metro",

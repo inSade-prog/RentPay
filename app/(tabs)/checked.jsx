@@ -57,8 +57,12 @@ const Checked = () => {
             </View>
           </View>
 
+          <View className="m-2 mx-5">
+            <MySearchBar textHolder="search" textHolderColor="#707070" />
+          </View>
+
           {/* Table */}
-          <View>
+          <View className="mb-20">
             <MyHistoryTable data={HistoryData} />
           </View>
         </View>

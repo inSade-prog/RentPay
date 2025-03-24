@@ -61,7 +61,7 @@ const Index = () => {
             <MySearchBar
               textHolder="Search for person or shop..."
               textHolderColor="#707070"
-              disableIcon={true}
+              icon={"search"}
             />
           </View>
           <View className="items-center justify-center mx-4 mt-2">
